@@ -1,0 +1,158 @@
+.header {
+  height: 40vw;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffebb2;
+  border-radius: 20px;
+}
+
+.header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #8b322c;
+}
+.header p {
+  max-width: 600px;
+  padding-bottom: 20px;
+  color: #5e5c5a;
+}
+.header p::selection {
+  background-color: #8b322c;
+  color: #000;
+}
+
+.header button {
+  padding: 0.6vw 1.9vw;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  background-color: #8b322c;
+  color: #ffebb2;
+}
+.header button::selection {
+  background-color: #8b322c;
+  color: #000;
+}
+.header button:hover {
+  background-color: white;
+  color: #8b322c;
+}
+.header-content {
+  padding: 20px;
+  animation: fadeIn 2s;
+}
+.hero {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1170px) {
+  .hero {
+    width: 340px;
+    height: 390px;
+  }
+
+  .header h2 {
+    font-size: 53px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    display: none;
+  }
+
+  .header h2 {
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+  .header p {
+    max-width: 600px;
+    padding-bottom: 20px;
+    color: white;
+  }
+  .header {
+    background-image: url("/header_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .header-content {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header h2 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h2 {
+    font-size: 34px;
+  }
+  .header p {
+    font-size: 12px;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h2 {
+    font-size: 34px;
+  }
+  .header p {
+    font-size: 10px;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h2 {
+    font-size: 28px;
+  }
+  .header p {
+    font-size: 8px;
+    padding-bottom: 15px;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header button {
+    font-size: 11px;
+  }
+}

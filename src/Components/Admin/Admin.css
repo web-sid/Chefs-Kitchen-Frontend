@@ -1,0 +1,53 @@
+.admin {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://t4.ftcdn.net/jpg/02/92/20/37/360_F_292203735_CSsyqyS6A4Z9Czd4Msf7qZEhoxjpzZl1.jpg);
+}
+.admin img {
+  background-size: cover;
+}
+
+.containers {
+  width: max(24vw, 200px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.containers h1 {
+  margin-top: 15px;
+  padding: 10px 5px;
+  color: rgb(192, 98, 98);
+}
+.containers input {
+  max-width: 300px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  outline-color: #8b332c;
+  background-color: rgb(167, 173, 179);
+  border: none;
+}
+
+.containers button {
+  max-width: 300px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #8b332c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.containers p {
+  margin-top: 20px;
+  color: white;
+}
+
+.containers p span {
+  cursor: pointer;
+  color: rgb(192, 98, 98);
+}

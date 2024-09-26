@@ -1,0 +1,82 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explore h1 {
+  color: #8b322c;
+  font-weight: 600;
+  font-size: 40px;
+  padding-top: 55px;
+}
+.explore h1::selection {
+  background-color: #8b322c;
+  color: #000;
+}
+
+.explore-text {
+  max-width: 60%;
+  color: #4f4d4c;
+}
+.explore-text::selection {
+  background-color: #8b322c;
+  color: #000;
+}
+
+.explore-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  margin: 20px 0px;
+  overflow-x: scroll;
+}
+
+.explore-list::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-list-items {
+  width: 24.5vw;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.explore-list-items p {
+  margin-top: 10px;
+  color: #4f4d4c;
+  font-weight: 600;
+  font-size: max(1.4w, 16px);
+  cursor: pointer;
+}
+
+.explore hr {
+  margin: 10px 0px;
+  height: 2px;
+  background-color: #ffebb2;
+  border: none;
+}
+
+.explore-list-items .active {
+  border: 4px solid #8b322c;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1050px) {
+  .explore-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore h1 {
+    font-size: 30px;
+  }
+  .explore-text {
+    font-size: 12px;
+  }
+}
