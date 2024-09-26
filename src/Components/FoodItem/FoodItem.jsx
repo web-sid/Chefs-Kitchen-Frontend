@@ -9,7 +9,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
   return (
     <div className="food-item">
       <div className="item-image-container">
-        <img className="item-image" src={url + "/images/" + image} alt="" />
+        <img className="item-image" src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1daa9086-0f1d-4d65-86b5-4a15a36d08d4/traditional-food-around-the-world-Travlinmad.jpg" alt="" />
 
         {!cartItems[id] ? (
           <img
